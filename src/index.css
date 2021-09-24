@@ -39,10 +39,15 @@ nav ul li a{
 nav ul li a:hover{
   color: #ccc;
 }
+.display{
+  display: flex;
+}
 .container{
   display: flex;
   flex-wrap: wrap;
+  width: 60%;
 }
+
 blockquote{
   width: 300px;
   background-color: #fff;
