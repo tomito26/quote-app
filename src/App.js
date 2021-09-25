@@ -42,10 +42,16 @@ function App() {
     setQuotes(newQuotes)
   }
 
+  const deleteQuote = index =>{
+     const newQuotes = [...quotes];
+     newQuotes.splice(index,1);
+     setQuotes(newQuotes)
+  }
+
   return (
     <div>
       <Header />
-      <Quotes quotes={quotes} addQuote={addQuote}/>
+      <Quotes quotes={quotes} addQuote={addQuote} onDelete={deleteQuote}/>
     </div>
   );
 }
